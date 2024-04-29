@@ -3,9 +3,13 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.env" />
+<<<<<<< HEAD
       <excludeFolder url="file://$MODULE_DIR$/.idea/copilot/chatSessions" />
+=======
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
+>>>>>>> 360370224da6af73e5ff353b81f7506c55e55384
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.10 (StudentComplaints)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.11 (StudentComplaints)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
