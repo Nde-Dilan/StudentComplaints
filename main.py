@@ -25,12 +25,12 @@ class MainApp(QMainWindow, ui):
         from email.mime.multipart import MIMEMultipart
         from email.mime.text import MIMEText
         from email.mime.application import MIMEApplication
-        #TODO:
+        #TODO: CONNECT THE ATTACHMENT FUNCTIONALITY
         try:
             # Email configuration
             sender_email = self.sender_email.text()
             sender_password = self.sender_password.text()
-            recipient_email = "heudan@gmail.com"
+            recipient_email = "feupa.fraidycadin@ictuniversity.edu.cm"
             subject = "Student Complaint"
             body = self.contentEmail.toPlainText()
 
