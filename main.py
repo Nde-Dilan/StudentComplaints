@@ -51,9 +51,10 @@ class MainApp(QMainWindow, ui):
                 server.starttls()
                 server.login(sender_email, sender_password)
                 server.sendmail(sender_email, recipient_email, msg.as_string())
+            QMessageBox.information(self, "Info", "Email sent successfully!", QMessageBox.Ok)
         except smtplib.SMTPException as e:
           print(e)
-        QMessageBox.information(self, "Info", "Email sent successfully!", QMessageBox.Ok)
+
     def quitfunction(self):
         self.close()
 
