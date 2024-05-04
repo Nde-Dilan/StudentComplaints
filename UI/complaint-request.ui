@@ -76,7 +76,6 @@
        <font>
         <family>Ink Free</family>
         <pointsize>12</pointsize>
-        <weight>50</weight>
         <bold>false</bold>
        </font>
       </property>
@@ -100,7 +99,6 @@
        <font>
         <family>Ink Free</family>
         <pointsize>20</pointsize>
-        <weight>50</weight>
         <italic>false</italic>
         <bold>false</bold>
        </font>
@@ -141,7 +139,6 @@
        <font>
         <family>Ink Free</family>
         <pointsize>12</pointsize>
-        <weight>50</weight>
         <bold>false</bold>
        </font>
       </property>
@@ -165,7 +162,6 @@
        <font>
         <family>Ink Free</family>
         <pointsize>12</pointsize>
-        <weight>50</weight>
         <bold>false</bold>
        </font>
       </property>
@@ -189,7 +185,6 @@
        <font>
         <family>Ink Free</family>
         <pointsize>12</pointsize>
-        <weight>50</weight>
         <bold>false</bold>
        </font>
       </property>
@@ -226,7 +221,6 @@
        <font>
         <family>Ink Free</family>
         <pointsize>12</pointsize>
-        <weight>50</weight>
         <bold>false</bold>
        </font>
       </property>
@@ -253,7 +247,7 @@
        </font>
       </property>
      </widget>
-     <widget class="QComboBox" name="emailCombo">
+     <widget class="QComboBox" name="courseCombo">
       <property name="geometry">
        <rect>
         <x>670</x>
@@ -295,7 +289,6 @@
       <property name="font">
        <font>
         <pointsize>12</pointsize>
-        <weight>75</weight>
         <bold>true</bold>
        </font>
       </property>
@@ -319,7 +312,6 @@ background-color:white;</string>
       <property name="font">
        <font>
         <pointsize>12</pointsize>
-        <weight>75</weight>
         <bold>true</bold>
        </font>
       </property>
@@ -344,7 +336,6 @@ background-color:white;
       <property name="font">
        <font>
         <family>Arial Black</family>
-        <weight>75</weight>
         <bold>true</bold>
        </font>
       </property>
@@ -381,7 +372,6 @@ background-color:white;
        <font>
         <family>Ink Free</family>
         <pointsize>12</pointsize>
-        <weight>50</weight>
         <bold>false</bold>
        </font>
       </property>
@@ -401,7 +391,7 @@ background-color:white;
      <x>0</x>
      <y>0</y>
      <width>846</width>
-     <height>26</height>
+     <height>18</height>
     </rect>
    </property>
   </widget>
