@@ -25,7 +25,7 @@ class MainApp(QMainWindow, ui):
         from email.mime.multipart import MIMEMultipart
         from email.mime.text import MIMEText
         from email.mime.application import MIMEApplication
-        #TODO:
+        #
         try:
             # Email configuration
             sender_email = self.sender_email.text()
