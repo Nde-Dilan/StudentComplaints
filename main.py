@@ -4,7 +4,7 @@ import sys
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
-
+import MySQLdb
 
 from PyQt5.uic import loadUiType
 
@@ -18,7 +18,7 @@ class MainApp(QMainWindow, ui):
 
         self.quit1.clicked.connect(self.quitfunction)
         self.sendEmail.clicked.connect(self.sendfunction)
-        # self.fill_book_db()
+        self.show_courses()
 
     def sendfunction(self):
         import smtplib
@@ -30,8 +30,8 @@ class MainApp(QMainWindow, ui):
             # Email configuration
             sender_email = self.sender_email.text()
             sender_password = self.sender_password.text()
-            recipient_email = "feupa.fraidycadin@ictuniversity.edu.cm"
-            subject = "Student Complaint"
+            recipient_email = "heudan@gmail.com"
+            subject = f"Student Complaint for {self.courseCombo.currentText()}"
             body = self.contentEmail.toPlainText()
 
             # SMTP server settings (for Gmail)
@@ -57,6 +57,18 @@ class MainApp(QMainWindow, ui):
 
     def quitfunction(self):
         self.close()
+
+    def show_courses(self):
+        self.db = MySQLdb.connect(host='localhost', user='root', password='123456789', db='complaints')
+        self.cursor = self.db.cursor()
+
+        self.cursor.execute('''
+           SELECT CourseName FROM course
+           ''')
+
+        data = self.cursor.fetchall()
+        for course in data:
+            self.courseCombo.addItem(course[0])
 
 
 
